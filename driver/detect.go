@@ -1,19 +1,18 @@
-// +build linux
-// +build lxc all
+// +build !windows
 
 package lxc
 
 import (
-	"log"
-	"strings"
-	"os"
 	"bufio"
+	"log"
+	"os"
+	"strings"
 )
 
 // Detect Detect dependencies
 func (l *LXC) Detect() bool {
 	var err error
-	
+
 	var f *os.File
 	if f, err = os.Open("/proc/self/cgroup"); err != nil {
 		if os.IsNotExist(err) {
