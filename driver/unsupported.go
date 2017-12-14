@@ -1,4 +1,4 @@
-// +build windows,lxc
+// +build windows
 
 package lxc
 

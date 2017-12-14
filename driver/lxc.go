@@ -1,13 +1,6 @@
-// +build lxc all
-
 package lxc
 
 import "github.com/virtmonitor/driver"
-
-const (
-	//LXC_PATH Path to LXC
-	LXC_PATH = "/usr/sbin/vzlist"
-)
 
 //LXC LXC struct
 type LXC struct {
@@ -23,6 +16,7 @@ func (l *LXC) Name() string {
 	return "LXC"
 }
 
-func (l *LXC) Stop() {
+//Close Close driver
+func (l *LXC) Close() {
 	return
 }
