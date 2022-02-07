@@ -12,7 +12,7 @@ import (
 
 	"github.com/virtmonitor/driver"
 	"github.com/virtmonitor/virNetTap"
-	"gopkg.in/lxc/go-lxc.v2"
+	"github.com/lxc/go-lxc"
 )
 
 // Collect Collect domain statistics
